@@ -162,7 +162,5 @@ button {
     background-color: #faa7ad;
     border: 2px solid #fbe0e2;
     align-self: flex-end;
-    position: absolute;
-    bottom: -58px;
-    right: -163px;
+    margin: 0 0 -58px -24px;
 }
