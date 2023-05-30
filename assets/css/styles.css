@@ -70,6 +70,13 @@ button {
     color: #656689;
 }
 
+.section-heading {
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.19;
+    color: var(--primary-color);
+}
 /* Header   */
 
 .header {
@@ -288,4 +295,138 @@ button {
     font-weight: 500;
     text-decoration-line: underline;
     color: var(--primary-color);
+}
+
+/* About */
+.about {
+    margin-top: 138px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about__label {
+    font-family: Sora, sans-serif;
+    color: #5e6085;
+}
+
+.about__title {
+    margin-top: 15px;
+}
+
+.about__desc {
+    margin-top: 24px;
+}
+
+.about__title,
+.about__desc {
+    width: 444px;
+}
+
+.about-list__check {
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 40px 36px;
+}
+
+.about__check {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #48496a;
+    display: flex;
+    align-items: center;
+}
+
+.about__check::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.about__check::after {
+    content: url(../icon/check.svg);
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+
+.about__media {
+    position: relative;
+    height: 560px;
+}
+
+.about__card {
+    width: 136px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 26px;
+    position: absolute;
+    top: 165px;
+    left: 0;
+}
+
+.about__card__title {
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.about__card__desc {
+    margin-top: 14px;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #c6f4f9;
+}
+
+.about__card__decor {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+}
+
+.about__img__wrap {
+    width: 494px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+}
+
+.about__img__wrap::after {
+    content: "";
+    display: block;
+    inset: auto 0 0 0;
+    height: 336px;
+    position: absolute;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.about__img {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__img__decor {
+    position: absolute;
+    top: 157px;
+    right: -83px;
 }
