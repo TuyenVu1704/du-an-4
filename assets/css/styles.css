@@ -5,6 +5,7 @@
 :root {
     --primary-color: #000958;
     --second-color: #ff5d31;
+    --third-color: #ff5b2e;
 }
 
 html {
@@ -653,18 +654,42 @@ button {
     column-gap: 6px;
 }
 
-.service__img__warp {
+.service__img__wrap {
+    margin-top: 17px;
     position: relative;
+    width: 447px;
 }
 
 .service__img {
-    --width: 440px;
+    position: relative;
+    z-index: 1;
+    width: 447px;
+    display: block;
 }
 
 .service__img__wrap::after {
-    width: 410px;
+    content: "";
+    display: block;
+    inset: auto 16px 0 16px;
     height: 350px;
     background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
     border-radius: 10px;
-    z-index: -1;
+    position: absolute;
+    z-index: 0;
+}
+
+.service-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-cta__link {
+    margin-top: 17px;
+    width: 214px;
+    --height: 56px;
+    font-weight: 500;
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
