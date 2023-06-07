@@ -1155,7 +1155,7 @@ button {
 .footer {
     margin-top: 131px;
     padding-bottom: 48px;
-    background-image: linear-gradient(to right, #fff6ed 43%, transparent 43%);
+    background-image: linear-gradient(to right, #fff6ed 44%, transparent 44%);
 }
 
 .footer-inner {
@@ -1253,4 +1253,42 @@ button {
 
 .footer-social__img {
     width: 100%;
+}
+
+.footer-right-body {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px 137px;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.footer-right__title {
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.11;
+    color: var(--primary-color);
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.footer-right__item {
+    margin-top: 12px;
+}
+
+.footer-right__link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #656689;
+}
+
+.copyright {
+    margin-top: 52px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.17;
+    color: #656689;
+    opacity: 0.5;
 }
